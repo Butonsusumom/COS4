@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="545.0" prefWidth="863.0" spacing="20.0" style="-fx-background-color: d5aecc;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tsybulko.cos4.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="754.0" prefWidth="823.0">
+      <children>
+         <LineChart fx:id="Signal1" alternativeRowFillVisible="false" createSymbols="false" layoutY="7.0" legendVisible="false" prefHeight="220.0" prefWidth="399.0" title="Signal 1" verticalZeroLineVisible="false">
+            <xAxis>
+               <NumberAxis prefWidth="500.0" fx:id="xAxis" />
+            </xAxis>
+            <yAxis>
+               <NumberAxis fx:id="yAxis" side="LEFT" />
+            </yAxis>
+         </LineChart>
+         <LineChart fx:id="Signal2" alternativeRowFillVisible="false" createSymbols="false" layoutX="401.0" layoutY="7.0" legendVisible="false" prefHeight="220.0" prefWidth="426.0" title="Signal 2" verticalZeroLineVisible="false">
+            <xAxis>
+               <NumberAxis prefWidth="500.0" fx:id="xAxis1" />
+            </xAxis>
+            <yAxis>
+               <NumberAxis fx:id="yAxis1" side="LEFT" />
+            </yAxis>
+         </LineChart>
+         <Label layoutX="45.0" layoutY="241.0" text="Simple Corellation Algorithm">
+            <font>
+               <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="45.0" layoutY="276.0" text="F(t) = ">
+            <font>
+               <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="45.0" layoutY="309.0" text="Time: ">
+            <font>
+               <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="442.0" layoutY="241.0" text="Fast Corellation Algorithm">
+            <font>
+               <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="442.0" layoutY="277.0" text="F(t) = ">
+            <font>
+               <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="442.0" layoutY="309.0" text="Time: ">
+            <font>
+               <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+         </Label>
+         <Text fx:id="SimpleF" layoutX="96.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="202.0517578125">
+            <font>
+               <Font name="Times New Roman" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="SimpleT" layoutX="96.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="202.0517578125">
+            <font>
+               <Font name="Times New Roman" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="FastF" layoutX="490.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="202.0517578125">
+            <font>
+               <Font name="Times New Roman" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="FastT" layoutX="490.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="202.0517578125">
+            <font>
+               <Font name="Times New Roman" size="18.0" />
+            </font>
+         </Text>
+         <Label layoutX="45.0" layoutY="368.0" text="AutoCorellation Signal1">
+            <font>
+               <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+         </Label>
+         <LineChart fx:id="AutoSignal" alternativeRowFillVisible="false" createSymbols="false" layoutX="386.0" layoutY="347.0" legendVisible="false" prefHeight="150.0" prefWidth="426.0" title="AutoCorrelation" verticalZeroLineVisible="false">
+            <xAxis>
+               <NumberAxis prefWidth="500.0" fx:id="xAxis2" />
+            </xAxis>
+            <yAxis>
+               <NumberAxis fx:id="yAxis2" side="LEFT" />
+            </yAxis>
+         </LineChart>
+         <Label layoutX="45.0" layoutY="409.0" text="Time: ">
+            <font>
+               <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+         </Label>
+         <Text fx:id="AutoT" layoutX="93.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="202.0517578125">
+            <font>
+               <Font name="Times New Roman" size="18.0" />
+            </font>
+         </Text>
+      </children>
+   </Pane>
+</VBox>
